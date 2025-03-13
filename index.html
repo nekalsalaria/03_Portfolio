@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="left">
+            <div class="email">
+                <h4 id="em">nekalsingh987@gmail.com</h4>
+            </div>
+            <div class="button" id="btn">
+                <button id="bt" onclick="window.open('Resume.pdf', '_blank')">Resume</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="links">
+                <a id="link" href="#" title="LinkedIn">LinkedIn</a>
+                <a id="leet" href="#" title="LeetCode">LeetCode</a>
+                <a id="git" href="#" title="GitHub">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="pic">
+            <img src="profile.jpg.jpg" alt="Profile Picture">
+        </div>
+        <div class="text">
+            <h1 id="tex" class="animated-text">Transform Ideas into Websites</h1>
+            <button onclick="window.open('https://github.com/nekalsalaria', '_blank')">View Projects</button>
+        </div>
+    </div>
+
+    <div class="line">
+        <hr>
+    </div>
+
+    <div class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>💻 Web Development</h3>
+                <div class="skills-list">
+                    <span><strong>HTML</strong></span>
+                    <span><strong>CSS</strong></span>
+                    <span><strong>JavaScript</strong></span>
+                    <span><strong>React</strong></span>
+                    <span><strong>GSAP</strong></span>
+                    <span><strong>Tailwind CSS</strong></span>
+                    <span><strong>Express</strong></span>
+                    <span><strong>MongoDB</strong></span>
+                    <span><strong>SQL</strong></span>
+                    <span><strong>Material-UI</strong></span>
+                    <span><strong>Node.js</strong></span>
+                    <span><strong>REST API</strong></span>
+                    <span><strong>JWT Authentication</strong></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h3>💻 Competitive Programing</h3>
+                <p>
+                    <strong>DSA in C++ , Solved 330+ problems on Leetcode ,Contest Rating 1311 ,Want to start your DSA journey? Feel free to reach me out for structured roadmap </strong>
+                </p>
+            </div>
+            <div class="skill-box">
+                <h3>✍️ Content Writing</h3>
+                <p>
+                    <strong>I write technical articles and engaging storytelling content. I have also collaborated with many YouTubers, helping them craft impactful content.</strong>
+                </p>
+            </div>
+        </div>
+        <p class="connect-text">Open to projects, internships, and collaborations! 🚀</p>
+    </div>
+
+    <div class="line">
+        <hr>
+    </div>
+
+    <div class="project">
+        <div class="pic">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/029/723/original/hand-shake-clipart-transparent-background-free-png.png" alt="Handshake">
+        </div>
+        <div class="text">
+            <h1>Hire me!!</h1>
+            <div class="button">
+                <button id="emi" onclick="copyEmail()">Email</button>
+                <button id="wh" onclick="window.open('https://wa.me/9682343120', '_blank')">WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="line">
+        <hr>
+    </div>
+
+    <footer class="nav">
+        <div class="left">
+            <p>© 2025 Nekal Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText("nekalsingh987@gmail.com");
+            alert("Email copied to clipboard!");
+        }
+
+        // Text animation
+        let text = document.querySelector('.animated-text');
+        let words = ["Transform Ideas into Website", "Build Stunning web Experiences"];
+        let index = 0;
+        function animateText() {
+            text.style.opacity = 0;
+            setTimeout(() => {
+            text.textContent = words[index];
+            text.style.opacity = 1;
+            index = (index + 1) % words.length;
+            }, 400);
+        }
+        setInterval(animateText, 3000);
+    </script>
+
+</body>
+</html>
