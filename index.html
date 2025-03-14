@@ -61,7 +61,7 @@
             <div class="skill-box">
                 <h3>💻 Competitive Programing</h3>
                 <p>
-                    <strong>DSA in C++ , Solved 330+ problems on Leetcode ,Contest Rating 1311 ,Want to start your DSA journey? Feel free to reach me out for structured roadmap </strong>
+                    <strong>DSA in C++ , Solved 350+ problems on Leetcode ,Contest Rating 1400+ ,Want to start your DSA journey? Feel free to reach me out for structured roadmap </strong>
                 </p>
             </div>
             <div class="skill-box">
@@ -85,7 +85,7 @@
         <div class="text">
             <h1>Hire me!!</h1>
             <div class="button">
-                <button id="emi" onclick="copyEmail()">Email</button>
+                <button id="emi" onclick="openEmailClient()">Email</button>
                 <button id="wh" onclick="window.open('https://wa.me/9682343120', '_blank')">WhatsApp</button>
             </div>
         </div>
@@ -102,9 +102,8 @@
     </footer>
 
     <script>
-        function copyEmail() {
-            navigator.clipboard.writeText("nekalsingh987@gmail.com");
-            alert("Email copied to clipboard!");
+        function openEmailClient() {
+            window.location.href = "mailto:nekalsingh987@gmail.com";
         }
 
         // Text animation
