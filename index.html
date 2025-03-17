@@ -28,7 +28,7 @@
             <img src="profileimg.jpeg" alt="Profile Picture">
         </div>
         <div class="text">
-            <h1 id="tex" class="animated-text">Transform Ideas into Websites</h1>
+            <h1 id="tex" class="animated-text">"Think. Code. Create."</h1>
             <button onclick="window.open('https://github.com/nekalsalaria', '_blank')">View Projects</button>
         </div>
     </div>
@@ -101,23 +101,7 @@
         </div>
     </footer>
 
-    <script>
-        
-
-        // Text animation
-        let text = document.querySelector('.animated-text');
-        let words = ["Transform Ideas into Website", "Build Stunning web Experiences"];
-        let index = 0;
-        function animateText() {
-            text.style.opacity = 0;
-            setTimeout(() => {
-            text.textContent = words[index];
-            text.style.opacity = 1;
-            index = (index + 1) % words.length;
-            }, 400);
-        }
-        setInterval(animateText, 3000);
-    </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
