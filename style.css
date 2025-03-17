@@ -150,12 +150,18 @@ html, body {
 }
 #link{
     color: #0A66C2;
+    font-size: large;
+    font-weight: bolder;
 }
 #leet{
     color: #FFA116;
+    font-size: large;
+    font-weight: bolder;
 }
 #git{
     color: #74797E;
+    font-size: large;
+    font-weight: bolder;
 }
 .connect-text {
     font-size: 1.3rem;
