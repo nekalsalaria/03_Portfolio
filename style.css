@@ -9,6 +9,10 @@ html, body {
     background-color: #F1F0EF;
     color: #333;
 }
+#em{
+    font-size: large;
+    font-weight: bolder;
+}
 #wh {
     background-color: green;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
